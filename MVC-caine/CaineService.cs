@@ -50,5 +50,19 @@ namespace MVC_caine
                 Console.WriteLine(x.CaineInfo());
             }
         }
+
+        //CRUD
+        public bool EditDogHeight(string rasa, int newHeight)
+        {
+            foreach (Caine x in CaineList)
+            {
+                if (x.rasa == rasa)
+                {
+                    x.inaltime = newHeight; 
+                    return true;
+                }
+            }
+            return false; 
+        }
     }
 }
