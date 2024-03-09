@@ -7,6 +7,7 @@ internal class Program
         CaineService service = new CaineService();
 
         service.LoadData();
+        View view = new View();
 
         service.AfisareCaini();
     }
